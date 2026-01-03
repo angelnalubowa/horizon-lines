@@ -5,10 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font-awesome/all.min.css">
-    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="css/variables.css">
     <title>Services | Horizon Lines</title>
-    <link rel="stylesheet" href="service.css">
+    <link rel="icon" type="image/x-icon" href="images/printer.png">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/navbar.css">    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1.dist/aos.js">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*Services*/
         .services-hero {
             padding: 4rem 2rem 0rem 2rem;
         }
@@ -85,9 +95,33 @@
             }
         }
     </style>
+    <script src="js/components.js"></script>
+    <script>
+        loadComponent("footer", "components/footer.html");
+    </script>
 </head>
 
-<body>
+<body class="service-page">
+    <!--Navigation bar-->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo1-edited.png" alt="Logo">
+                <h1>HORIZON LINES LTD</h1>
+            </div>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <ul class="nav-links">
+                <li><a class="red" href="index.html">HOME</a></li>
+                <li><a class="blue" href="services.html">SERVICES</a></li>
+                <li><a class="red" href="#">PROJECTS</a></li>
+                <li><a class="blue" href="about.html">ABOUT&nbsp;US</a></li>
+                <li><a class="red" href="#footer">CONTACT</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+    <!--Services Hero-->
     <section class="services-section" id="services-page">
         <div class="services-hero">
             <div class="services-hero-content">
@@ -105,7 +139,8 @@
                 </div>
             </div>
         </div>
-        <div class="screen1">
+        <!-- Section 1: GRAPHICS DESIGN -->
+        <div class="section screen-blue">
             <div class="services-content">
                 <div class="services-text">
                     <h1 class="text-black" data-aos="fade-right" data-aos-duration="2000">GRAPHICS<br> DESIGN</h1>
@@ -126,7 +161,7 @@
                         </ul>
                     </div>
                     <div class="services-contact" data-aos="fade-right" data-aos-duration="2000">
-                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <p class="services-cta">TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
                         <hr>
                         <div class="services-numbers">
                             <p><i class="fa fa-phone"></i>0772507857</p>
@@ -135,10 +170,12 @@
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="images/book.png">
                 </div>
             </div>
         </div>
-        <section class="section screen2">
+        <!-- Section 2: PRINTING SERVICES -->
+        <section class="section screen-yellow">
             <div class="services-content">
                 <div class="services-text">
                     <h1 data-aos="fade-right" data-aos-duration="2000">PRINTING<br> SERVICES</h1>
@@ -159,7 +196,7 @@
                         </ul>
                     </div>
                     <div class="services-contact" data-aos="fade-right" data-aos-duration="2000">
-                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <p class="services-cta">TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
                         <hr>
                         <div class="services-numbers">
                             <p><i class="fa fa-phone"></i>0772507857</p>
@@ -168,12 +205,13 @@
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="images/book.png">
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Branding -->
-        <section class="section screen3">
+        <!-- Section 3: BRANDING SOLUTIONS -->
+        <section class="section screen-blue">
             <div class="services-content">
                 <div class="services-text">
                     <h1 data-aos="fade-right" data-aos-duration="2000">BRANDING<br> SOLUTIONS</h1>
@@ -194,7 +232,7 @@
                         </ul>
                     </div>
                     <div class="services-contact" data-aos="fade-right" data-aos-duration="2000">
-                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <p class="services-cta">TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
                         <hr>
                         <div class="services-numbers">
                             <p><i class="fa fa-phone"></i>0772507857</p>
@@ -203,11 +241,12 @@
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="images/book.png">
                 </div>
             </div>
         </section>
-        <!-- Section 5: Offset Plate Making -->
-        <section class="section screen4">
+        <!-- Section 4: OFFSET PLATE MAKING -->
+        <section class="section screen-yellow">
             <div class="services-content">
                 <div class="services-text">
                     <h1 data-aos="fade-right" data-aos-duration="2000">OFFSET PLATE<br> MAKING</h1>
@@ -228,7 +267,7 @@
                         </ul>
                     </div>
                     <div class="services-contact" data-aos="fade-right" data-aos-duration="2000">
-                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <p class="services-cta">TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
                         <hr>
                         <div class="services-numbers">
                             <p><i class="fa fa-phone"></i>0772507857</p>
@@ -237,11 +276,12 @@
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="images/book.png">
                 </div>
             </div>
         </section>
-        <!-- Section 6: Digital Quick Color Printing -->
-        <section class="section screen5">
+        <!-- Section 5: DIGITAL QUICK COLOR PRINTING -->
+        <section class="section screen-blue">
             <div class="services-content">
                 <div class="services-text">
                     <h1 data-aos="fade-right" data-aos-duration="2000">DIGITAL QUICK<br> COLOR PRINTING</h1>
@@ -262,7 +302,7 @@
                         </ul>
                     </div>
                     <div class="services-contact" data-aos="fade-right" data-aos-duration="2000">
-                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <p class="services-cta">TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
                         <hr>
                         <div class="services-numbers">
                             <p><i class="fa fa-phone"></i>0772507857</p>
@@ -271,11 +311,12 @@
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="images/book.png">
                 </div>
             </div>
         </section>
-        <!-- Section 7: Flexographic Printing -->
-        <section class="section screen6">
+        <!-- Section 6: FLEXOGRAPHIC PRINTING -->
+        <section class="section screen-yellow">
             <div class="services-content">
                 <div class="services-text">
                     <h1 data-aos="fade-right" data-aos-duration="2000">FLEXOGRAPHIC<br> PRINTING</h1>
@@ -296,7 +337,7 @@
                         </ul>
                     </div>
                     <div class="services-contact" data-aos="fade-right" data-aos-duration="2000">
-                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <p class="services-cta">TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
                         <hr>
                         <div class="services-numbers">
                             <p><i class="fa fa-phone"></i>0772507857</p>
@@ -308,8 +349,8 @@
                 </div>
             </div>
         </section>
-        <!-- Section 8: Branding -->
-        <section class="section screen7">
+        <!-- Section 7: NEAT PERFECT BINDING -->
+        <section class="section screen-blue">
             <div class="services-content">
                 <div class="services-text">
                     <h1 data-aos="fade-right" data-aos-duration="2000">NEAT<br> PERFECT BINDING</h1>
@@ -332,7 +373,7 @@
                         </ul>
                     </div>
                     <div class="services-contact" data-aos="fade-right" data-aos-duration="2000">
-                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <p class="services-cta">TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
                         <hr>
                         <div class="services-numbers">
                             <p><i class="fa fa-phone"></i>0772507857</p>
@@ -340,12 +381,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="services-image">
+                <div class="services-image" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="images/book.png">
                 </div>
             </div>
         </section>
-        <!-- Section 8: Branding -->
-        <section class="section screen8">
+        <!-- Section 8: BARCODE AND NUMBERING  -->
+        <section class="section screen-yellow">
             <div class="services-content">
                 <div class="services-text">
                     <h1 data-aos="fade-right" data-aos-duration="2000">BARCODE AND<br> NUMBERING</h1>
@@ -366,7 +408,7 @@
                         </ul>
                     </div>
                     <div class="services-contact" data-aos="fade-right" data-aos-duration="2000">
-                        <p>TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
+                        <p class="services-cta">TO REQUEST A QUOTE CALL OR WHATSAPP:</p>
                         <hr>
                         <div class="services-numbers">
                             <p><i class="fa fa-phone"></i>0772507857</p>
@@ -375,10 +417,15 @@
                     </div>
                 </div>
                 <div class="services-image" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="images/book.png">
                 </div>
             </div>
         </section>
     </section>
+    <!--Footer-->
+    <div id="footer"></div>
 </body>
-
+<script>
+    AOS.init();
+</script>
 </html>

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/variables.css">
-    <style>
-        /******************************************/
+/******************************************/
         /*Navigation*/
         /******************************************/
 
@@ -204,36 +196,3 @@
 
 
         }
-    </style>
-</head>
-
-<body>
-    <nav>
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo1-edited.png" alt="Logo">
-                <h1>HORIZON LINES LTD</h1>
-            </div>
-            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-            <ul class="nav-links">
-                <li><a class="red" href="index.html">HOME</a></li>
-                <li><a class="blue" href="#services">SERVICES</a></li>
-                <li><a class="red" href="#projects">PROJECTS</a></li>
-                <li><a class="blue" href="#about-us">ABOUT&nbsp;US</a></li>
-                <li><a class="red" href="#footer">CONTACT</a></li>
-
-            </ul>
-        </div>
-
-    </nav>
-</body>
-<script>
-    //Mobile menu toggle function
-    function toggleMenu() {
-        // Toggle the active class on the nav-links element
-        // This will show or hide the navigation menu
-        document.querySelector('.nav-links').classList.toggle('active');
-    }
-</script>
-
-</html>

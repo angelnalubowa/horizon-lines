@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Horizon Lines LTD</title>
-    <link href="about.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/printer.png">
-    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="css/variables.css">
     <link href="font-awesome/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1.dist/aos.js">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         /********************************************************************************************/
         /*Hero*/
         /********************************************************************************************/
@@ -79,11 +86,34 @@
             }
         }
     </style>
+    <script src="js/components.js"></script>
+    <script>
+        loadComponent("footer", "components/footer.html");
+    </script>
 </head>
 
 <body>
+    <!--Navbar-->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo1-edited.png" alt="Logo">
+                <h1>HORIZON LINES LTD</h1>
+            </div>
+            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
+            <ul class="nav-links">
+                <li><a class="red" href="index.html">HOME</a></li>
+                <li><a class="blue" href="services.html">SERVICES</a></li>
+                <li><a class="red" href="#projects">PROJECTS</a></li>
+                <li><a class="blue" href="#hero-about">ABOUT&nbsp;US</a></li>
+                <li><a class="red" href="#footer">CONTACT</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
     <!--Hero Section-->
-    <section class="about-hero">
+    <section class="about-hero" id="hero-about">
         <div class="about-hero-content">
             <div class="about-hero-text">
                 <h1 data-aos="fade-up" data-aos-duration="2000">About Us.</h1>
@@ -214,8 +244,8 @@
             </div>
         </div>
     </section>
+    <div id="footer"></div>
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>

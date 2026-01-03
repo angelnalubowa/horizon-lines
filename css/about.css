@@ -240,21 +240,23 @@ flex:1;
     width: 80%;
 }
 
-.social-duty-image{
-    background: url(images/world1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.social-duty-image {
+    height: 100%;
 }
 .social-duty-image img{
-    display: none;
+    display: block;
+    height: 100%;
+    max-height: 500px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 @media(max-width:768px){
- .social-duty{
+.social-duty{
     background-size: cover;
     background-repeat: no-repeat;
- }
- .social-duty-content{
+}
+.social-duty-content{
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
@@ -270,7 +272,11 @@ flex:1;
     background: none;
  }
  .social-duty-image img{
-    display: block;
     height: 360px;
  }
+}
+@media(max-width:375px){
+    .social-duty-image img{
+height: 315px;
+    }
 }

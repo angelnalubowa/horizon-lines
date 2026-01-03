@@ -4,16 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="try.css">
-    <link rel="stylesheet" href="variables.css">
-    <link rel="stylesheet" href="font-awesome/all.min.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="services.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="components/navbar.html">    
-    
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <title>Home</title>
+    <link rel="stylesheet" href="css/variables.css">
     <style>
         *{
             box-sizing: border-box;
@@ -22,66 +14,31 @@
             margin: 0;
             padding: 0;
         }
+        .container{
+            width: calc(70% - 30px);
+            background:black;
+            color: white;
+            height: calc(10% - 20px);
+            margin: 0 auto;
+            padding: calc(4vw - 10px);
+        }
+        .heading{
+            font-family: 'Futura-Medium',sans-serif;
+            font-size: clamp(1.5rem,calc(1rem + 4vw),4rem);
+        }
+        .paragraph{
+            font-family: 'Futura-Light',sans-serif;
+            font-size: clamp(1.0rem,calc(1rem + 4vw),2rem);
+        }
     </style>
-    <script src="js/components.js"></script>
-    <script>
-        loadComponent("navbar", "components/navbar.html");
-        loadComponent("stats", "components/stats.html");
-        loadComponent("footer", "components/footer.html");
-    </script>
-    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo1-edited.png" alt="Logo">
-                <h1>HORIZON LINES LTD</h1>
-            </div>
-            <span class="menu-toggle" onclick="toggleMenu()">&#9776;</span>
-            <ul class="nav-links">
-                <li><a class="red" href="#hero">HOME</a></li>
-                <li><a class="blue" href="#services-page">SERVICES</a></li>
-                <li><a class="red" href="#projects">PROJECTS</a></li>
-                <li><a class="blue" href="#about-page">ABOUT&nbsp;US</a></li>
-                <li><a class="red" href="#footer">CONTACT</a></li>
-
-            </ul>
-        </div>
-
-    </nav>
-    <section class="hero" id="hero">
-        <div class="hero-desktop">
-            <div class="hero-container" alt="hero-image">
-                <div class="hero-text">
-                    <h1 data-aos="fade-right" data-aos-duration="2000">Print that <strong
-                            style="color: var(--secondary-color);">Moves</strong><br><strong
-                            style="color: var(--primary-color);">Brands</strong> Forward.</h1>
-                    <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">Premium commercial printing
-                        powered by precision<br> machines, disciplined craft, and a team that
-                        understands<br> deadlines the way you do.</p>
-                    <div class="hero-buttons" data-aos="zoom-in-right" data-aos-duration="2000" data-aos-delay="2000">
-                        <a href="#" class="quote">GET A QUOTE</a>
-                        <a href="#" class="portfolio">SEE OUR WORK</a>
-                    </div>
-
-                </div>
-                <div class="hero-image" data-aos="fade-left" data-aos-duration="2000">
-                    <img src="images/hero-edited.png" class=hero-img alt="Hero Image">
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-
+    <div class="container">
+        <h1 class="heading">HEADING</h1>
+        <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat totam magnam nihil sunt cum facere possimus illo fuga? Recusandae, sapiente! Et deserunt quod error eum, rerum non repellat numquam exercitationem.</p>
+    </div>
 </body>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
 
 </html>
