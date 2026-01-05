@@ -47,5 +47,19 @@
             --secondary-rgb: 234, 52, 48;
             --light-blue: #e9feff;
             --light-rgb:233, 254, 255;
-
         }
+
+        /*Repeated CSS*/
+        .text-white{
+            color: white;
+        }
+        .text-black{
+            color: black;
+        }
+        .text-blue{
+            color: var(--primary-color);
+        }
+        .bg-blue{
+            background-color: var(--primary-color);
+        }
+        

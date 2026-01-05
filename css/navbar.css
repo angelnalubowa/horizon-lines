@@ -1,10 +1,9 @@
 /******************************************/
         /*Navigation*/
         /******************************************/
-
         nav {
             
-            background: var(--primary-color);
+            background: white;
             position: fixed;
             width: 100%;
             top: 0;
@@ -15,15 +14,18 @@
         }
 
         .navbar {
+            width: 100%;
             display: flex;
+            flex-direction: row;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            max-width: 1200px;
+            max-width: 1500px;
             margin: auto;
         }
 
         .logo {
+            
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -37,9 +39,9 @@
         }
 
         .logo h1 {
-            font-family: 'Futura-Light', sans-serif;
+            font-family: 'Futura-Medium',sans-serif;
             font-weight: lighter;
-            font-size: .8rem;
+            font-size: 1rem;
             color: black;
         }
 
@@ -59,14 +61,6 @@
             position: relative;
         }
 
-        .blue {
-            background-color: var(--primary-color);
-        }
-
-        .red {
-            background-color: var(--secondary-color);
-        }
-
         .nav-links a {
             display: flex;
             flex-direction: column;
@@ -78,12 +72,12 @@
             align-content: center;
             justify-content: center;
             text-decoration: none;
-            color: white;
             position: relative;
             overflow: hidden;
             transition: all 0.3s ease;
             font-family: 'Futura-Demi', sans-serif;
             font-size: 1rem;
+            border-radius: 25px;
         }
 
         /* Underline animation */
@@ -139,7 +133,7 @@
 
             .menu-toggle {
                 display: block;
-                color: white;
+                color: var(--primary-color);
             }
 
             .nav-links {
@@ -165,7 +159,6 @@
 
             .nav-links.active {
                 max-height: 600px;
-                background-color: var(--primary-color);
                 transform: translateY(0);
                 opacity: 1;
             }

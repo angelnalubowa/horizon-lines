@@ -32,7 +32,8 @@
         /*Hero*/
         /******************************************/
         .hero {
-            background: url(images/blackbg@4x-8.png) no-repeat center center/cover;
+            background: linear-gradient(180deg, rgba(255, 255, 255, .6)0%, rgba(255, 255, 255, .6)100%), url(images/blackbg@4x-8.png) no-repeat center center/cover;
+
         }
 
         .hero-desktop {
@@ -122,24 +123,29 @@
             .hero-text h1 {
                 font-size: 3rem;
             }
-            .hero-text a{
+
+            .hero-text a {
                 padding: .5rem 1rem;
             }
-            .hero-buttons{
+
+            .hero-buttons {
                 display: flex;
                 flex-direction: row;
                 align-items: start;
                 gap: 10px;
             }
         }
-        @media(max-width:375px){
-            .hero-desktop{
+
+        @media(max-width:375px) {
+            .hero-desktop {
                 padding: 2rem 1rem;
             }
-            .hero-text{
+
+            .hero-text {
                 padding: .7rem;
             }
-            .hero-text a{
+
+            .hero-text a {
                 padding: .5rem .5rem;
             }
         }
@@ -166,7 +172,9 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav id="navbar"></nav>
+    <!-- HERO SECTIONbvc\a -->
     <section class="hero" id="hero">
         <div class="hero-desktop">
             <div class="hero-container" alt="hero-image">
@@ -184,7 +192,7 @@
 
                 </div>
                 <div class="hero-image" data-aos="fade-left" data-aos-duration="2000">
-                    <img src="images/hero-edited.webp" class=hero-img alt="Hero Image">
+                    <img src="images/index-hero1.webp" class=hero-img alt="Hero Image">
 
                 </div>
             </div>
