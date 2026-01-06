@@ -42,6 +42,10 @@
     justify-content: center;
 }
 @media(min-width:768px){
+    .staff-content{
+        height: 60vh;
+        padding: 3rem 0;
+    }
     .staff-text{
         margin: 0 0 4rem 0;
     }

@@ -11,7 +11,7 @@ body{
     background:url(../images/whitebg@4x-8.png) no-repeat center center/cover,var(--primary-color);
 }
 .about-content {
-    height: 90vh;
+    height: 60vh;
     display: flex;
     gap:3rem;
     flex-direction: column;
