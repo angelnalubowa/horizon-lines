@@ -8,15 +8,15 @@ body{
 /*About*/
 /******************************************/
 .about{
-    background:url(../images/whitebg@4x-8.png) no-repeat center center/cover,var(--primary-color);
+    background:url(../images/white-pattern.png) no-repeat center center/cover,var(--primary-color);
 }
 .about-content {
-    height: 60vh;
+    height: fit-content;
     display: flex;
     gap:3rem;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0rem;
+    padding: 3rem 0rem;
 }
 .about-banner{
     width: 100%;

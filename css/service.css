@@ -60,31 +60,31 @@
     object-position: center;
 }
 .blue-grad{
-    background: url(../images/blue\ gradient@4x-8.png);
+    background: url(../images/grad-blue.png);
 }
 .red-grad{
-    background: url(../images/red\ gradient@4x-8.png);
+    background: url(../images/grad-red.png);
 }
 .grey-grad{
-    background: url(../images/grey\ gradient@4x-8.png);
+    background: url(../images/grad-grey.png);
 }
 .purple-grad{
     background: rgba(75, 12, 83);
 }
 .offset{
-    background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 100%), url(../images/offset.jpg);
+    background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 100%), url(../images/offset.webp);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .barcode{
-    background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 100%), url(../images/barcode.jpg);
+    background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 100%), url(../images/barcode.webp);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .printing{
-    background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 100%), url(../images/printing2.jpg);
+    background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.4) 100%), url(../images/printing2.webp);
     background-position: right;
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@
 }
 @media(min-width:768px){
     .section{
-        height: 90vh;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
