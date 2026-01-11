@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../font-awesome/all.min.css">
     <style>
         /******************************************/
         /*Footer*/
@@ -77,30 +78,44 @@
             margin-top: 20px;
         }
 
-        .contact-info h3 {
+        .contact-info h2 {
             font-family: 'Futura-Bold', sans-serif;
         }
-
-        .contact-info p {
-            font-family: 'Futura-Light', sans-serif;
-            margin-bottom: 10px;
-            color: #bdc3c7;
+        .contact-card{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            margin: 2rem 0;
         }
-
-        .contact-info a {
-            color: var(--light-blue);
+        .contact-card a{
             text-decoration: none;
+            color: white;
         }
-
-        .contact-info i {
-            margin-right: 8px;
-            font-size: 20px;
+        .contact-icon{
+            display: flex;
+            align-items: center;
         }
-
-        .contact-info a:hover {
-            text-decoration: underline;
+        .contact-icon i{
+            height: fit-content;
+            width: fit-content;
+            margin: 0;
+            font-size: 2rem;
+            padding: .6rem;
+            border-radius: 6px;
+            color:white;
+            background-color: var(--secondary-color);
         }
-
+        .contact-row{
+        }
+        .contact-row h4{
+            font-family: 'Futura-Demi',sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-row p{
+            font-family: 'Futura-Light',sans-serif;
+            margin: 0;
+            padding: 0;
+        }
         /* Quick Links Column */
         .quick-links ul {
             list-style: none;
@@ -245,29 +260,65 @@
                 </div>
 
                 <div class="contact-info">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-at"></i><a href="mailto:horizonlines2006@gmail.com">horizonlines2006@gmail.com</a></p>
-                    <p>
-                        <i class="fas fa-phone"></i><a href="tel:+1234567890">+256 772 507 587</a>
-                    </p>
-                    <p>
-                        <i class="fab fa-whatsapp"></i><a href="https://wa.me/256750314624?text=Hi! I'm interested in your printing services." target="_blank" class="whatsapp-button" aria-label="Chat with us on WhatsApp">+256 750 314 624</a>
-                    </p>
-                    <p>
-                        <i class="fa fa-envelope"></i>P.O Box 72617, Kampala Uganda
-                    </p>
-                    <p><i class="fas fa-location"></i>Plot 29A 8th Street Industrial Area Namuwongo</p>
+                    <h2>Contacts</h2>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-at"></i>
+                        </div>
+                        <div class="contact-row">
+                            <p>EMAIL US</p>
+                            <a href="mailto:horizonlines2006@gmail.com"><h4>horizonlines2006@gmail.com</h4></a>
+                            <a href="mailto:kamyafred2006@yahoo.com"><h4>kamyafred2006@yahoo.com</h4></a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-row">
+                            <p>CALL US</p>
+                            <a href="tel:+256772507587"><h4>+256 772 507 587</h4></a>
+                            <a href="tel:+256772523501"><h4>+256 772 523 501</h4></a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-row">
+                            <p>WHATSAPP</p>
+                            <a href="https://wa.me/256750314624?text=Hi! I'm interested in your printing services." target="_blank" class="whatsapp-button" aria-label="Chat with us on WhatsApp"><h4>+256 750 314 624</h4></a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-row">
+                            <p>POSTAL ADDRESS/p>
+                            <h4>P.O Box 72617, Kampala Uganda</h4>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-location"></i>
+                        </div>
+                        <div class="contact-row">
+                            <p>ADDRESS</p>
+                            <h4>Plot 29A 8th Street Industrial Area Namuwongo</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Quick Links Column -->
             <div class="footer-column quick-links">
-                <h3>Quick Links</h3>
+                <h3>Website Links</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <!--<li><a href="#blog">Blog</a></li>
-                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <!--<li><a href="#careers">Careers</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#privacy">Privacy Policy</a></li> -->
                 </ul>
