@@ -102,6 +102,26 @@
             height: auto;
             width: 100%;
         }
+        .hero-image-carousel {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .hero-slide {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* match your current behavior */
+            opacity: 0;
+            transition: opacity 1.2s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
 
         .cta-contact {
             display: none;
@@ -178,7 +198,7 @@
 <body>
     <!-- Navbar -->
     <nav id="navbar"></nav>
-    <!-- HERO SECTIONbvc\a -->
+    <!-- HERO SECTION-->
     <section class="hero" id="hero">
         <div class="hero-desktop">
             <div class="hero-container" alt="hero-image">
@@ -196,8 +216,13 @@
 
                 </div>
                 <div class="hero-image" data-aos="fade-left" data-aos-duration="2000">
-                    <img src="images/index-hero1.png" class=hero-img alt="Hero Image" fallback>
-
+                    <div class="hero-image-carousel">
+                        <img src="images/index-hero1.png" class="hero-slide active" alt="">
+                        <img src="images/index-hero2.png" class="hero-slide" alt="">
+                        <img src="images/index-hero3.png" class="hero-slide" alt="">
+                        <img src="images/index-hero4.png" class="hero-slide" alt="">
+                        <img src="images/index-hero5.png" class="hero-slide" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -497,47 +522,73 @@
     loadComponent("footer", "components/footer.html");
 </script>
 <script>
-const counters = document.querySelectorAll(".count");
+    window.addEventListener("load", () => {
+        const slides = document.querySelectorAll(".hero-slide");
+        let current = 0;
+        const delay = 4500; // time per image
 
-const formatNumber = (value, format) => {
-    if (format === "compact") {
-        return new Intl.NumberFormat("en", {
-            notation: "compact",
-            maximumFractionDigits: 1
-        }).format(value);
-    }
-    return value.toLocaleString();
-};
+        if (slides.length <= 1) return;
 
-const animateCount = (counter) => {
-    const target = +counter.dataset.target;
-    const suffix = counter.dataset.suffix || "";
-    const format = counter.dataset.format;
-    let current = 0;
-    const duration = 1500;
-    const start = performance.now();
+        setInterval(() => {
+            slides[current].classList.remove("active");
+            current = (current + 1) % slides.length;
+            slides[current].classList.add("active");
+        }, delay);
+    });
 
-    const update = (now) => {
-        const progress = Math.min((now - start) / duration, 1);
-        current = Math.floor(progress * target);
-        counter.innerText = formatNumber(current, format) + suffix;
+    const hero = document.querySelector(".hero");
 
-        if (progress < 1) requestAnimationFrame(update);
+const heroObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) clearInterval(interval);
+    });
+}, { threshold: 0.2 });
+
+heroObserver.observe(hero);
+</script>
+
+<script>
+    const counters = document.querySelectorAll(".count");
+
+    const formatNumber = (value, format) => {
+        if (format === "compact") {
+            return new Intl.NumberFormat("en", {
+                notation: "compact",
+                maximumFractionDigits: 1
+            }).format(value);
+        }
+        return value.toLocaleString();
     };
 
-    requestAnimationFrame(update);
-};
+    const animateCount = (counter) => {
+        const target = +counter.dataset.target;
+        const suffix = counter.dataset.suffix || "";
+        const format = counter.dataset.format;
+        let current = 0;
+        const duration = 1500;
+        const start = performance.now();
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            animateCount(entry.target);
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.6 });
+        const update = (now) => {
+            const progress = Math.min((now - start) / duration, 1);
+            current = Math.floor(progress * target);
+            counter.innerText = formatNumber(current, format) + suffix;
 
-counters.forEach(counter => observer.observe(counter));
+            if (progress < 1) requestAnimationFrame(update);
+        };
+
+        requestAnimationFrame(update);
+    };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCount(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.6 });
+
+    counters.forEach(counter => observer.observe(counter));
 </script>
 
 </html>
