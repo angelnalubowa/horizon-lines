@@ -35,7 +35,7 @@
 .industry-card p{
     font-family: 'Futura-Light', sans-serif;
     text-align: center;
-    font: 1.1rem;
+    font-size: 1.1rem;
 }
 .bg-image1{
     background-image: url(../images/image1-1.png);
@@ -140,7 +140,7 @@
         font-size: .9rem;
     }
     .industry-card-content p{
-        font-size: .6rem;
+        font-size: .8rem;
     }
 }
 @media(min-width:1439px){
