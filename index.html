@@ -57,7 +57,6 @@
             font-size: clamp(3rem, 5vw, 4rem);
             color: black;
             margin: 0;
-
         }
 
         .hero-text p {
@@ -124,11 +123,14 @@
 
         }
         @media(min-width: 1023px){
+            .hero{
+                padding: calc(var(--navbar-height) + 3rem) 0;
+            }
             .hero-container{
                 display:grid;
                 grid-template-columns: 1fr 1fr;
                 gap:0;
-                padding:0 2rem;
+                padding:0 3rem;
             }
             .hero-text{
                 padding: 0 2rem;
@@ -166,10 +168,10 @@
             <div class="hero-image" data-aos="fade-left" data-aos-duration="2000">
                 <div class="hero-image-carousel">
                     <img src="images/index-hero1.png" class="hero-slide active" alt="" loading="eager" fetchpriority="high">
-                    <img src="images/index-hero2.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                    <img src="images/index-hero3.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                    <img src="images/index-hero4.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
-                    <img src="images/index-hero5.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero2-1.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero3-1.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero4-1.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero5-1.png" class="hero-slide" alt="" loading="eager" fetchpriority="high">
                 </div>
             </div>
         </div>
