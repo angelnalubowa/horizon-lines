@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* hero section */
+.hero-section{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg,rgba(0,0,0,0.8)0%,rgba(0,0,0,0.8)100%),url(../images/branding.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content h1{
+    font-family: 'Futura-Bold',sans-serif;
+    color: white;
+    font-size: clamp(2rem,calc(2rem + 2vw),4rem);
+}
+.hero-content p{
+    font-family:'Futura-Book',sans-serif;
+    color: white;
+}
+/* quick links */
+.quicklinks{
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+.quicklinks-content{
+    padding:2rem 1rem;
+}
+.quick-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quick-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.quick-card i{
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
+.quick-card h2{
+    font-family: 'Futura-Bold',sans-serif;
+    color: black;
+    font-size: clamp(2rem,calc(2rem + 2vw),3rem)
+}
+.quick-card p{
+    font-family:'Futura-Book',sans-serif;
+    color: black;
+}
+@media(min-width:767px){}
+@media(min-width:1023px){
+    .quick-cards{
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-evenly;
+        padding:0rem  3rem;
+    }
+}
+@media(min-width:1439px){
+
+}
+/* map and form */
+.map_and_form{
+    margin: 0;
+    padding: 0;
+}
+.map_form_content{
+
+}
+
+/* .map-section{} */
+.map {
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:400px;
+}
+
+/* Responsive map inside */
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Form */
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+}
+.contact-form h3{
+    font-family: 'Futura-Book',sans-serif;
+    color: white;
+    font-size: clamp(2rem,calc(2rem + 2vw),4rem)
+}
+.form-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0 1rem;
+}
+.form-row{
+    width: 100%;
+}
+.form-row input{
+    width: 100%;
+    height: 50px;
+    padding: .5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+.form-row input::placeholder{
+    font-family: 'Futura-Book',sans-serif;
+    font-size: 1.5rem;
+}
+.form-elements textarea{
+    height:100px;
+    width: 100%;
+    border-radius: 5px;
+    resize: vertical;
+    padding: 1rem .5rem;
+}
+.form-elements button{
+    padding: .5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Futura-Book',sans-serif;
+    font-size: 1.5rem;
+    align-self: start;
+}
+@media(min-width:767px){}
+@media(min-width:1023px){
+    .map_and_form{
+        padding: 3rem;
+    }
+    .map_form_content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:20px;
+    }
+    .map{
+        height:100%;
+    }
+    .contact-form{
+        padding: 2rem 3rem;
+    }
+    .form-row{
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .form-elements{
+    }
+}
