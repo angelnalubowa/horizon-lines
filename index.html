@@ -6,18 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME | HORIZON LINES LTD</title>
 
-    <meta name="description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
+    <meta name="description"
+        content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
 
     <link rel="icon" type="image/x-icon" href="images/logo1-edited.png">
 
     <meta property="og.title" content="Horizon Lines Ltd">
-    <meta property="og:description" content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
+    <meta property="og:description"
+        content="Horizon Lines is a printing company that started operations in 1994. We have set a track record in the printing industry because of our outstanding performance and quality products. We pride ourselves in efficiency, quality, timely delivery and a wide array of quality print solutions; supported by our top of the range print and finishing equipment operated by efficient and skilled personnel.">
     <meta property="og:image" content="images/logo1-edited.png">
     <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/index.css" >
-    
+    <link rel="stylesheet" href="css/index.css">
+
     <link rel="stylesheet" href="font-awesome/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
@@ -47,7 +49,8 @@
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="2000">
                 <div class="hero-image-carousel">
-                    <img src="images/index-hero1.png" class="hero-slide active" alt="" loading="eager" fetchpriority="high">
+                    <img src="images/index-hero1.png" class="hero-slide active" alt="" loading="eager"
+                        fetchpriority="high">
                     <img src="images/index-hero2-1.png" class="hero-slide" alt="" loading="lazy">
                     <img src="images/index-hero3-1.png" class="hero-slide" alt="" loading="lazy">
                     <img src="images/index-hero4-1.png" class="hero-slide" alt="" loading="lazy">
@@ -315,11 +318,14 @@
                 <img src="images/electoral-commission-of-uganda-ec-logo-png_seeklogo-548893.png" loading="lazy">
             </div>
             <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-once="true">
-                <img src="images/IDI-logo.png" loading="lazy"></div>
+                <img src="images/IDI-logo.png" loading="lazy">
+            </div>
             <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-once="true">
-                <img src="images/MoE-logo.png" loading="lazy"></div>
+                <img src="images/MoE-logo.png" loading="lazy">
+            </div>
             <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-once="true">
-                <img src="images/MoH-Logo.png" loading="lazy"></div>
+                <img src="images/MoH-Logo.png" loading="lazy">
+            </div>
             <div class="brand-icon" data-aos="fade" data-aos-duration="2000" data-aos-once="true">
                 <img src="images/NARO-logo.png" loading="lazy">
             </div>
@@ -352,7 +358,7 @@
     <div id="contact"></div>
 
 
-    
+
 </body>
 <script>
     /* AOS */
@@ -377,7 +383,7 @@
 
         if (slides.length <= 1) return;
 
-        setInterval(() => {
+        let interval = setInterval(() => {
             slides[current].classList.remove("active");
             current = (current + 1) % slides.length;
             slides[current].classList.add("active");
