@@ -1,10 +1,10 @@
 //Mobile menu toggle function
-    function toggleMenu() {
-        // Toggle the active class on the nav-links element
-        // This will show or hide the navigation menu
-        document.querySelector('.nav-links').classList.toggle('active');
-    }
-/* Slider logic + animations */
+function toggleMenu() {
+  // Toggle the active class on the nav-links element
+  // This will show or hide the navigation menu
+  document.querySelector(".nav-links").classList.toggle("active");
+}
+/* Slider logic + animations
     const carousel = document.getElementById('carousel');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
