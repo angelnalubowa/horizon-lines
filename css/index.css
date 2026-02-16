@@ -41,7 +41,7 @@ body{
 
 .hero-text h1 {
     font-family: 'Futura-Bold', sans-serif;
-    font-size: clamp(3rem, 5vw, 4rem);
+    font-size: clamp(2rem, 10vw, 4rem);
     color: black;
     margin: 0;
 }
@@ -270,7 +270,7 @@ body{
 .service-content h1{
     font-family: 'Futura-Bold',sans-serif;
     color: white;
-    font-size: 4rem;
+    font-size: clamp(2rem,13vw,4rem);
     text-align: center;
 }
 .service-cards{
@@ -319,17 +319,17 @@ body{
             font-weight: bolder;
             text-decoration: none;            
             padding: 0.5rem 2rem;
-        }
+}
 
-        .quote {
-            background-color: var(--secondary-color);
-            color: white;
-        }
+.quote {
+    background-color: var(--secondary-color);
+    color: white;
+}
 
-        .portfolio-white {
-            background-color: white;
-            color: var(--primary-color);
-        }
+.portfolio-white {
+    background-color: white;
+    color: var(--primary-color);
+}
 @media(max-width: 768px ) {
     .service{
         padding: 2rem 2rem;
@@ -338,7 +338,7 @@ body{
         
     } */
     .service-cards{
-        display: flex;
+        display:flex;
         flex-direction: column;
         padding: 0;
         align-items: center;
@@ -348,16 +348,14 @@ body{
         height: 300px;
     }
     .service-icon{
-        height: 80%;
+        height: 75%;
     }
     .service-card-title h3{
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
     
 }
-@media(max-width:1024px){
-    
-}
+
 /******************************************/
 /*Review*/
 /******************************************/
