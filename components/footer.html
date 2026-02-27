@@ -292,16 +292,28 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                gap: 20px;
+                gap: 15px;
                 padding: 2rem 0rem;
             }
-
+            .contact-card{
+                max-width: calc(100vw/5);
+            }
+            .contact-row{
+                gap:3px;
+            }
             .contact-text p {
                 font-size: 1rem;
             }
 
             .social-links {
                 order: +1;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+            }
+            .social-links a{
+                height: 30px;
+                width: 30px;
             }
         }
 
@@ -362,11 +374,15 @@
             }
 
             .contact-text p {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
 
             .social-links {
                 order: +1;
+            }
+            .social-links a{
+                height: 40px;
+                width: 40px;
             }
 
         }
@@ -429,8 +445,8 @@
                             <a href="tel:+256772523501">
                                 <p>+256 772 523 501</p>
                             </a>
-                            <a href="tel:+256772507587">
-                                <p>+256 772 507 587</p>
+                            <a href="tel:+256772507857">
+                                <p>+256 772 507 857</p>
                             </a>
                         </div>
                     </div>
@@ -482,7 +498,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 1994 - 2025 HORIZON LINES LTD. All rights reserved.</p>
+            <p>&copy; 1994 - 2026 HORIZON LINES LTD. All rights reserved.</p>
         </div>
     </footer>
 </body>
